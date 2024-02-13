@@ -1,0 +1,101 @@
+audio {
+    display: none;
+}
+
+#card {
+    width: 30%;
+    margin: auto;
+    margin-top: 8vh;
+    height: fit-content;
+    background-color: black;
+}
+
+#root {
+    padding: 0%;
+}
+
+@media screen and (max-width:800px) {
+    #card {
+        width: 70%;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width:260px) {
+
+    #card {
+        width: 100%;
+        margin: auto;
+    }
+}
+
+span {
+    font-size: 1rem;
+}
+
+#playPause {
+    font-size: 2rem;
+}
+
+#rng {
+    -webkit-appearance: none;
+    appearance: none;
+    outline: none;
+    height: 2px;
+    width: 100%;
+    background-color: rgb(69, 69, 69);
+}
+
+#rng::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    background: rgb(103, 209, 228);
+    width: 13px;
+    height: 13px;
+    border: 2px solid rgb(13, 140, 13);
+    border-radius: 50%;
+    visibility: hidden;
+}
+
+#rng:hover::-webkit-slider-thumb {
+    visibility: visible;
+}
+
+button {
+    background: none;
+    border: none;
+}
+
+#vlumeParent {
+    position: relative;
+}
+
+#volume {
+    display: none;
+    position: absolute;
+    -webkit-appearance: none;
+    appearance: none;
+    left: 5px;
+    width: 50%;
+    margin: 0%;
+    height: 1.5px;
+    border-radius: 1vw;
+    outline: none;
+    background-color: grey;
+    transition: display 0.2s;
+}
+
+#volume::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    background: rgb(103, 209, 228);
+    width: 13px;
+    height: 13px;
+    border: 2px solid rgb(13, 140, 13);
+    border-radius: 50%;
+    visibility: hidden;
+}
+
+#volume:hover::-webkit-slider-thumb {
+    visibility: visible;
+}

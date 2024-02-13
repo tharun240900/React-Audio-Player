@@ -1,0 +1,41 @@
+body {
+    background-color: rgb(3, 20, 57);
+    height: 100%;
+    padding: 0%;
+    margin: 0%;
+}
+
+#root {
+    margin: 0%;
+}
+
+button.card {
+    background-color: rgb(40, 40, 40);
+    color: aliceblue;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+button.card:hover {
+    background-color: rgb(7, 7, 7);
+    box-shadow: 0 0 10px rgb(161, 155, 155);
+}
+
+#songsList {
+    width: 60%;
+    margin: auto;
+    margin-top: 8vh;
+    height: 86vh;
+    background-color: black;
+}
+
+@media screen and (max-width:800px) {
+    #songsList {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width:300px) {
+    #songsList {
+        width: 100%;
+    }
+}
